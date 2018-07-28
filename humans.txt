@@ -1,0 +1,12 @@
+# OWNER
+
+    Bill Castillo -- Designer / Developer -- github.com/billcastillo / billcastillo.me
+
+# THANKS
+
+    to my self lol
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    SASS, Gulp, jQuery, Modernizr, Flexboxgrid.css,
