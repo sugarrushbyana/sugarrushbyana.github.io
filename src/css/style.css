@@ -24,6 +24,17 @@
 .desktop-navigation {
   display: none; }
 
+.desktop-navigation ul li a {
+  font-weight: 700;
+  color: #504766;
+  transition: all 0.3s ease-in-out; }
+
+.desktop-navigation ul li:hover a {
+  background-image: -webkit-linear-gradient(135deg, #f5a3bf, #b1a6a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 3s infinite linear; }
+
 .mobile-navigation-icon {
   position: relative;
   align-self: center;

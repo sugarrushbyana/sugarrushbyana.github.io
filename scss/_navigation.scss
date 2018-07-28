@@ -22,6 +22,27 @@
 	display: none;
 }
 
+.desktop-navigation {
+	ul {
+		li {
+			a {
+				font-weight: 700;
+				color: $header-color;
+				transition: all 0.3s ease-in-out;
+			}
+
+			&:hover {
+				a {
+					background-image: -webkit-linear-gradient(135deg, $brand-color, $text-grey);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					animation: hue 3s infinite linear; 
+				}
+			}
+		}
+	}
+}
+
 .mobile-navigation-icon {
 	position: relative;
 	align-self: center;
