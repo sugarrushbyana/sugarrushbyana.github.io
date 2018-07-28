@@ -1,0 +1,33 @@
+/* Colors */
+$brand-color: #f5a3bf;
+$brand-blue: #9470b1;
+$grey-bg: #f7f7f7;
+
+$text-color: #000000;
+$sub-color: #464646;
+$text-grey: #b1a6a5;
+$header-color: #504766;
+
+/* Fonts */
+$font-header: 'Baloo', -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+$font-text: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+$font-mono: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+
+/* Breakpoints */
+$vertical-padding: 1.625em;
+
+$list-media: (
+	xl: 1440px,
+	lg: 1280px,
+	md-2: 1024px,
+	md: 768px,
+	sm: 640px,
+	xs: 460px
+);
+
+$screen-xs: 460px;
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-md-2: 1024px;
+$screen-lg: 1280px;
+$screen-xl: 1440px;

@@ -1,0 +1,29 @@
+/* Frequently Asked Questions */
+
+.faq {
+	max-width: $screen-md-2;
+	margin: 0 auto;
+
+	.faq-tab {
+		padding: 16px;
+		margin-bottom: 16px;
+		background: $grey-bg;
+		border-radius: 3px;
+		box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
+		h4 { 
+			color: $sub-color;
+			margin: 0;
+		}
+
+		&:not(last-child) {
+			// border-bottom: 1px solid $text-grey;
+		}
+	}
+
+	.faq-content {
+		p {
+			margin: 0;
+		}
+	}
+}

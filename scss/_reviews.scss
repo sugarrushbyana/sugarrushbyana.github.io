@@ -1,0 +1,48 @@
+/* Review Section */
+
+.review-section {
+	margin: $vertical-padding * 2 auto;
+	.review-card {
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		.review-image {
+			img {
+	 			width: 100%;
+	 			max-width: 100px;
+	 			max-height: 100px;
+	 			width: auto;
+				filter: url(shadow.svg#drop-shadow);
+				-webkit-filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+	 			filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+			}
+		}
+
+		.review-text {
+			.review-name {
+				margin: 0;
+				.review-title {
+					display: flex;
+					justify-content: center;
+					align-items: flex-start;
+
+					font-family: $font-text;
+					font-size: 0.80em;
+					font-weight: 300;
+				}
+			}
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-md) {
+	.review-section {
+		.review-card {
+			margin-bottom: $vertical-padding;
+		}
+	}
+}

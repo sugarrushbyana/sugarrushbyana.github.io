@@ -1,0 +1,22 @@
+/* Animations */
+
+@keyframes hue {
+	from {
+		filter: hue-rotate(0);
+	}
+
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(0.01);
+		border-radius: 50%;
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+	}
+}

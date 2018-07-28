@@ -1,0 +1,65 @@
+/* Typography */
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-header;
+	font-weight: 700;
+	color: $header-color;
+}
+
+h1 {
+	max-width: 100%;
+	font-size: 2.250em;
+	letter-spacing: -0.020em;
+	text-align: center;
+	margin: 1em auto 32px auto;
+}
+h2 {
+	font-size: 1.850em;
+	line-height: 1.22em;
+}
+
+h3,
+article h3 {
+	font-size: 1.60em;
+	line-height: 1.22em;
+	margin: $vertical-padding / 1.60 * 2 auto $vertical-padding / 1.60 / 2 auto;
+}
+
+h4,
+article h4 {
+	font-size: 1.40em;
+	line-height: 1.22em;
+	margin: $vertical-padding auto 0 auto;
+}
+
+p, ul,
+article p,
+article ul {
+	font-size: 1.250em;
+	line-height: 1.4;
+	margin-bottom: $vertical-padding;
+}
+
+blockquote {
+	position: relative;
+	font-family: $font-header;
+	color: $text-grey;
+	text-align: center;
+	line-height: 1;
+	letter-spacing: 0.050em;
+	
+	.prequote {
+		position: absolute;
+		top: -1.350em;
+		left: 0;
+		
+		font-family: $font-mono;
+		font-size: 0.50em;
+		font-variant: all-small-caps;
+	}
+
+	.author {
+		font-family: $font-text;
+		font-size: 0.750em;
+	}
+}

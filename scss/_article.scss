@@ -1,0 +1,58 @@
+/* Article */
+
+article {
+	width: 100%;
+	max-width: 770px;
+	margin: 0 auto;
+	
+	h1,h2,h3,h4,h5,h6,p,ul {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		
+	}
+	
+	ul {
+		list-style-type: disc;
+
+		li {
+			margin-left: 1em;
+		}
+	}
+
+	blockquote {
+		max-width: 600px;
+		font-size: 2em;
+
+		background: $grey-bg;
+		padding: $vertical-padding / 2 0;
+		margin: $vertical-padding * 2 auto;
+		border-radius: 3px;
+
+		p {
+			margin: 0;
+			line-height: 1;
+		}	
+
+		.quote {
+			background-image: -webkit-linear-gradient(135deg, $brand-color, $brand-blue);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: hue 10s infinite linear;
+		}
+
+		&::before {
+			position: absolute;
+			content: url('../../img/icons/quote.svg');
+			top: -18px;
+			left: 50%;
+			width: 36px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}
