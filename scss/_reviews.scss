@@ -5,9 +5,11 @@
 	.review-card {
 		position: relative;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
+		margin-bottom: 24px;
 
 		.review-image {
+			margin-right: 16px;
 			img {
 	 			width: 100%;
 	 			max-width: 100px;
@@ -16,6 +18,15 @@
 				filter: url(shadow.svg#drop-shadow);
 				-webkit-filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
 	 			filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.3));
+			}
+
+			&.img-circle {
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+				background: url('../../img/reviews/3.png') no-repeat;
+				background-position: center;
+				background-size: 150%;
 			}
 		}
 
@@ -45,4 +56,8 @@
 			margin-bottom: $vertical-padding;
 		}
 	}
+}
+
+.img-circle img {
+	border-radius: 50%;
 }

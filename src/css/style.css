@@ -206,15 +206,25 @@ blockquote {
   .review-section .review-card {
     position: relative;
     display: flex;
-    justify-content: center; }
-    .review-section .review-card .review-image img {
-      width: 100%;
-      max-width: 100px;
-      max-height: 100px;
-      width: auto;
-      filter: url(shadow.svg#drop-shadow);
-      -webkit-filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
-      filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3)); }
+    justify-content: flex-start;
+    margin-bottom: 24px; }
+    .review-section .review-card .review-image {
+      margin-right: 16px; }
+      .review-section .review-card .review-image img {
+        width: 100%;
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        filter: url(shadow.svg#drop-shadow);
+        -webkit-filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3)); }
+      .review-section .review-card .review-image.img-circle {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: url("../../img/reviews/3.png") no-repeat;
+        background-position: center;
+        background-size: 150%; }
     .review-section .review-card .review-text .review-name {
       margin: 0; }
       .review-section .review-card .review-text .review-name .review-title {
@@ -230,6 +240,9 @@ blockquote {
 @media only screen and (max-width: 768px) {
   .review-section .review-card {
     margin-bottom: 1.625em; } }
+
+.img-circle img {
+  border-radius: 50%; }
 
 /* Frequently Asked Questions */
 .faq {
