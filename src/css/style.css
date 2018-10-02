@@ -159,9 +159,11 @@ h1 {
   text-align: center;
   margin: 1em auto 32px auto; }
 
-h2 {
+h2,
+article h2 {
   font-size: 1.850em;
-  line-height: 1.22em; }
+  line-height: 1.22em;
+  margin: 2.03125em auto 0.50781em auto; }
 
 h3,
 article h3 {
@@ -181,6 +183,9 @@ article ul {
   font-size: 1.250em;
   line-height: 1.4;
   margin-bottom: 1.625em; }
+
+em {
+  font-style: italic; }
 
 blockquote {
   position: relative;
@@ -301,6 +306,88 @@ footer {
     text-align: left; }
     footer .footer-logo img {
       max-width: 250px; }
+
+.order-form {
+  position: relative;
+  margin-bottom: 24px; }
+  .order-form form {
+    max-width: 600px;
+    margin: 0 auto; }
+    .order-form form .form-status {
+      display: none;
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      text-align: center; }
+      .order-form form .form-status.success {
+        display: block;
+        background: #c8f8b5; }
+        .order-form form .form-status.success .success {
+          display: block; }
+      .order-form form .form-status.fail {
+        display: block;
+        background: #FBADB2; }
+        .order-form form .form-status.fail .fail {
+          display: block; }
+      .order-form form .form-status .success,
+      .order-form form .form-status .fail {
+        display: none; }
+      .order-form form .form-status span {
+        font-size: 1em; }
+    .order-form form input, .order-form form button, .order-form form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 8px;
+      border: 1px solid #b1a6a5;
+      border-radius: 5px;
+      background: white;
+      outline: none;
+      box-shadow: none;
+      font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+      font-size: 1.250em;
+      letter-spacing: 0.050em; }
+    .order-form form button {
+      max-width: 120px;
+      margin-top: 16px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      background: #f5a3bf; }
+    .order-form form label {
+      font-size: 1.250em;
+      font-weight: 700;
+      line-height: 2;
+      color: #504766; }
+    .order-form form .form-group input, .order-form form .form-group label, .order-form form .form-group textarea {
+      vertical-align: top;
+      max-width: 100%; }
+  .order-form .form-overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease-in-out;
+    z-index: 100; }
+    .order-form .form-overlay.visible {
+      visibility: visible;
+      opacity: 1; }
+    .order-form .form-overlay .form-overlay-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0); }
+      .order-form .form-overlay .form-overlay-content img {
+        max-width: 100px; }
+
+form button:hover {
+  cursor: pointer;
+  background: #f0759f; }
 
 body {
   position: relative;

@@ -63,7 +63,7 @@
 			<li><a href="#aboutUs">About</a></li>
 			<li><a href="#menu">MENU</a></li>
 			<li><a href="#faq">FAQ</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -85,7 +85,7 @@
 					<li><a href="#aboutUs">About</a></li>
 					<li><a href="#menu">MENU</a></li>
 					<li><a href="#faq">FAQ</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -102,9 +102,6 @@
 		</div>
 
 		<article>
-			<h2>Order ka?</h2>
-			<p>Presyong Divisoria. Lasang pang Glorrieta.</p>
-			
 			<section class="about-us" id="aboutUs">
 				<h2 class="text-outline" data-content="About us">
 					About us
@@ -278,6 +275,46 @@
 					<li>More soon..</li>
 				</ul>
 			</section>
+
+			<section class="contact" id="contact">
+				<h2 class="text-outline" data-content="Contact Us">
+					Contact Us
+					<span>Contact Us</span>
+				</h2>
+
+				<p>Order ka? Sulat sulat muna tayo.<br/>
+				<em>Interactive ordering soon&trade;</em></p>
+
+				<div class="order-form">
+					<div class="form-overlay">
+						<div class="form-overlay-content">
+							<img src="img/icons/loading.svg" alt="loading">
+							<p>Sending...</p>
+						</div>
+					</div>
+					<form action="https://script.google.com/macros/s/AKfycbwOQckvjBJaFx8g5dEzQKU8WKBftaDhniv5pThV/exec"
+						class="gform">
+						<div class="form-status">
+							<span class="success">Thank you! Message sent!</span>
+							<span class="fail">ugh! Message failed to send. Try again.</span>
+						</div>
+						<div class="form-group">
+							<label for="name">Name: </label>
+							<input type="text" name="name" required/>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone: </label>
+							<input type="text" pattern="^(09|\+639)\d{9}$" name="tel" placeholder="09xxxxxxxxx"/>
+						</div>
+						<div class="form-group">
+							<label for="message">Message: </label>
+							<textarea type="text" name="message" required></textarea>
+						</div>
+						<button type="submit">Send</button>
+					</form>	
+						
+				</div>
+			</section>
 		</article>
 		
 		<section class="faq" id="faq">
@@ -381,7 +418,7 @@
 							<li><a href="#aboutUs">About</a></li>
 							<li><a href="#menu">Menu</a></li>
 							<li><a href="#faq">FAQ</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>

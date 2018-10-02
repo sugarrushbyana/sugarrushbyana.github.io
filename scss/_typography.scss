@@ -13,9 +13,11 @@ h1 {
 	text-align: center;
 	margin: 1em auto 32px auto;
 }
-h2 {
+h2,
+article h2 {
 	font-size: 1.850em;
 	line-height: 1.22em;
+	margin: $vertical-padding / 1.60 * 2 auto $vertical-padding / 1.60 / 2 auto;
 }
 
 h3,
@@ -38,6 +40,10 @@ article ul {
 	font-size: 1.250em;
 	line-height: 1.4;
 	margin-bottom: $vertical-padding;
+}
+
+em {
+	font-style: italic;
 }
 
 blockquote {
