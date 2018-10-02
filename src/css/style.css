@@ -163,7 +163,7 @@ h2,
 article h2 {
   font-size: 1.850em;
   line-height: 1.22em;
-  margin: 2.03125em auto 0.50781em auto; }
+  margin: 1.92878em auto 0.43919em auto; }
 
 h3,
 article h3 {
@@ -419,6 +419,13 @@ body {
 /* ******************
  * Default Styles
  ********************/
+.top {
+  position: fixed;
+  display: none;
+  padding: 8px;
+  width: 32px;
+  height: 32px; }
+
 .overlay {
   visibility: hidden;
   opacity: 0;
