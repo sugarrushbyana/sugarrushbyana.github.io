@@ -73,6 +73,14 @@
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
+    var formStatus = document.querySelector('.form-status');
+
+    // Remove form status
+    if (formStatus.classList.contains('success')) {
+      toggleClass(formStatus, 'success');
+    } else if (formStatus.classList.contains('fail')) {
+      toggleClass(formStatus, 'fail');
+    }
 
     /* OPTION: Remove this comment to enable SPAM prevention, see README.md
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
@@ -98,7 +106,7 @@
           // console.log(xhr.status, xhr.statusText);
           // console.log(xhr.responseText);
 
-          var formStatus = document.querySelector('.form-status');
+          
           toggleClass(formOverlay, 'visible');
 
           if (xhr.status === 200) {
