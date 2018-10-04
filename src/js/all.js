@@ -7583,8 +7583,6 @@ module.exports = _dereq_(23);
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
-    } else {
-      console.log("Welcome Human!");
     }
   }
 
@@ -7592,7 +7590,7 @@ module.exports = _dereq_(23);
 		if (elem.classList.contains(classToToggle)) {
 		  elem.classList.remove(classToToggle);
 		} else {
-		   elem.classList.add(classToToggle);
+      elem.classList.add(classToToggle);
 		}
 	};
 
@@ -7638,7 +7636,7 @@ module.exports = _dereq_(23);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-    console.log(formData);
+    // console.log(formData);
     return formData;
   }
 
@@ -7648,12 +7646,20 @@ module.exports = _dereq_(23);
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
+    var formStatus = document.querySelector('.form-status');
 
-    /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+    // Remove form status
+    if (formStatus.classList.contains('success')) {
+      toggleClass(formStatus, 'success');
+    } else if (formStatus.classList.contains('fail')) {
+      toggleClass(formStatus, 'fail');
+    }
+
+    /* OPTION: Remove this comment to enable SPAM prevention, see README.md */
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
       return false;
     }
-    */
+    
 
     if (data.email && !validEmail(data.email)) {   // if email is not valid show error
       var invalidEmail = form.querySelector(".email-invalid");
@@ -7673,7 +7679,7 @@ module.exports = _dereq_(23);
           // console.log(xhr.status, xhr.statusText);
           // console.log(xhr.responseText);
 
-          var formStatus = document.querySelector('.form-status');
+          
           toggleClass(formOverlay, 'visible');
 
           if (xhr.status === 200) {
@@ -7695,7 +7701,6 @@ module.exports = _dereq_(23);
   }
   
   function loaded() {
-    console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {

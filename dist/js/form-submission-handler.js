@@ -8,8 +8,6 @@
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
-    } else {
-      console.log("Welcome Human!");
     }
   }
 
@@ -17,7 +15,7 @@
 		if (elem.classList.contains(classToToggle)) {
 		  elem.classList.remove(classToToggle);
 		} else {
-		   elem.classList.add(classToToggle);
+      elem.classList.add(classToToggle);
 		}
 	};
 
@@ -63,7 +61,7 @@
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-    console.log(formData);
+    // console.log(formData);
     return formData;
   }
 
@@ -82,11 +80,11 @@
       toggleClass(formStatus, 'fail');
     }
 
-    /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+    /* OPTION: Remove this comment to enable SPAM prevention, see README.md */
     if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
       return false;
     }
-    */
+    
 
     if (data.email && !validEmail(data.email)) {   // if email is not valid show error
       var invalidEmail = form.querySelector(".email-invalid");
@@ -128,7 +126,6 @@
   }
   
   function loaded() {
-    console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {
