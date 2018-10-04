@@ -1,8 +1,8 @@
 /* Frequently Asked Questions */
 
 .faq {
-	max-width: $screen-md-2;
-	margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto 48px auto;
 
 	.faq-tab {
 		padding: 16px;
@@ -14,10 +14,6 @@
 		h4 { 
 			color: $sub-color;
 			margin: 0;
-		}
-
-		&:not(last-child) {
-			// border-bottom: 1px solid $text-grey;
 		}
 	}
 

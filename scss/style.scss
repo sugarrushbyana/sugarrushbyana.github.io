@@ -14,6 +14,7 @@
 @import 'animations';
 @import 'footer';
 @import 'form';
+@import 'tips';
 
 body {
 	position: relative;
@@ -110,6 +111,10 @@ nav {
 figure {
 	margin: 0 auto 32px auto;
 	text-align: center;
+
+	&.main-logo {
+		margin: 32px auto 32px auto;
+	}
 	img {
 		width: 100%;
 	}
@@ -128,6 +133,10 @@ figure {
 @media only screen and (min-width: $screen-md) {
 	figure {
 		margin: 0 auto 64px auto;
+
+		&.main-logo {
+			margin: 64px auto 64px auto;
+		}
 
 		figure {
 			margin-bottom: 0;

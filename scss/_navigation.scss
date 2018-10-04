@@ -24,10 +24,12 @@
 
 .desktop-navigation {
 	ul {
+		font-size: 1em;
 		li {
 			a {
-				font-weight: 700;
+				font-weight: 300;
 				color: $header-color;
+				letter-spacing: 1px;
 				transition: all 0.3s ease-in-out;
 			}
 
@@ -35,6 +37,7 @@
 				a {
 					background-image: -webkit-linear-gradient(135deg, $brand-color, $text-grey);
 					-webkit-background-clip: text;
+					background-clip: text;
 					-webkit-text-fill-color: transparent;
 					animation: hue 3s infinite linear; 
 				}
