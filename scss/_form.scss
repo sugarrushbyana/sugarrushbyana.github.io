@@ -9,7 +9,7 @@
 		.form-status {
 			display: none;
 			width: 100%;
-			padding: 8px;
+			padding: 16px 8px;
 			border-radius: 5px;
 			text-align: center;
 
@@ -79,6 +79,15 @@
 				vertical-align: top;
 				max-width: 100%;
 			}
+
+			&.submit-btn,
+			&.checkbox {
+				// display: inline-block;
+			}
+
+			&.submit-btn {
+				margin-right: 24px;
+			}
 		}
 	}
 
@@ -118,6 +127,26 @@ form {
 		&:hover {
 			cursor: pointer;
 			background: darken($brand-color, 10%);
+		}
+	}
+
+	.form-group {
+		&.checkbox {
+			label {
+				display: inline-block;
+				font-size: 1em;
+				font-weight: 300;
+				line-height: 1.4;
+			}
+
+			input {
+				display: inline-block;
+				width: auto;
+			}
+		}
+
+		&.hidden {
+			display: none;
 		}
 	}
 }

@@ -23,11 +23,12 @@ body {
 	font-weight: 300;
 	font-size: 16px;
 	color: $text-color;
+	overflow-x: hidden;
 
 	&::before {
 		position: absolute;
 		content: '';
-		background: url('../../img/patterns/palm-leaf.png') repeat;
+		// background: url('../../img/patterns/palm-leaf.png') repeat;
 		opacity: 0.35;
 		width: 100%;
 		height: 100%;
@@ -112,9 +113,6 @@ figure {
 	margin: 0 auto 32px auto;
 	text-align: center;
 
-	&.main-logo {
-		margin: 32px auto 32px auto;
-	}
 	img {
 		width: 100%;
 	}
@@ -133,10 +131,6 @@ figure {
 @media only screen and (min-width: $screen-md) {
 	figure {
 		margin: 0 auto 64px auto;
-
-		&.main-logo {
-			margin: 64px auto 64px auto;
-		}
 
 		figure {
 			margin-bottom: 0;
@@ -159,7 +153,13 @@ figure {
 	text-align: left;
 }
 
-// #6084c0
+h1 {
+	&.text-outline {
+		font-size: 4em;
+		text-align: left;
+	}
+}
+
 .text-outline {
 	position: relative;
 	font-size: 3em;
@@ -168,14 +168,16 @@ figure {
 	-webkit-text-stroke: 1px $brand-color;
 	margin-top: 0.8125em;
 	margin-bottom: 0.203125em;
-	overflow: hidden;
+	// overflow: hidden;
 	span {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 3px;
 		left: 3px;
-		color: #6084c0;
+		// color: #6084c0;
+		color: white;
+		text-shadow: 4px 4px 12px rgba(0,0,0,0.250);
 		-webkit-text-stroke: 0;
 		opacity: 0.50;
 		z-index: -1;
@@ -209,6 +211,13 @@ figure {
 /* ******************
  * Custom Style
  ********************/
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
 
  header {
  	width: 100%;
@@ -266,10 +275,26 @@ figure {
  	}
  }
 
- .banner {
- 	max-width: 768px;
- 	margin: 0 auto;
- }
+.banner {
+	.main-logo {
+		position: relative;
+
+		#sugarrushLogo {
+			max-width: 768px;
+			margin: 0 auto;
+			padding: 0 16px;
+			filter: drop-shadow(0 24px 24px rgba(0,0,0,0.25));
+		}
+
+		#waveBackground {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0);
+			z-index: -10;
+		}
+	}
+}
 
  .logo-grid {
  	margin-top: $vertical-padding;

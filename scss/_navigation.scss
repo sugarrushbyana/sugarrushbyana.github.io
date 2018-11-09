@@ -26,6 +26,8 @@
 	ul {
 		font-size: 1em;
 		li {
+			transition: all 0.2s ease-in-out;
+
 			a {
 				font-weight: 300;
 				color: $header-color;
@@ -34,6 +36,8 @@
 			}
 
 			&:hover {
+				transform: scale(1.2);
+
 				a {
 					background-image: -webkit-linear-gradient(135deg, $brand-color, $text-grey);
 					-webkit-background-clip: text;
